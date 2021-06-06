@@ -17,6 +17,7 @@ namespace MatchGame
 {
     using System.Windows.Threading;
 
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -31,6 +32,7 @@ namespace MatchGame
         DispatcherTimer timer = new DispatcherTimer();
         int tenthsOfSecondsElapsed;
  
+
         /// <summary>
         /// Sets game up
         /// </summary>
@@ -42,6 +44,7 @@ namespace MatchGame
             timer.Tick += Timer_Tick;
             SetUpGame();
         }
+
 
         /// <summary>
         /// Updates timer textblock
@@ -58,6 +61,7 @@ namespace MatchGame
                 timeTextBlock.Text = timeTextBlock.Text + " - Play again? (Click Here)";
             }
         }
+
 
         /// <summary>
         /// Sets a list of 8 matching pair of animal emojis and randomly assigns each textblock an emoji
@@ -129,6 +133,7 @@ namespace MatchGame
                 findingMatch = false;
             }
         }
+
 
         /// <summary>
         /// Resets the game if all matches have been found
